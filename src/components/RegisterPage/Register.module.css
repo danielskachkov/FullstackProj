@@ -1,11 +1,21 @@
 .Register
 {
-    display: inline-block;
+    display: table;
+    border-spacing: 100px;
     font-size: 20px;
+    margin-left: 50px;
 }
 
 .item a
 {
-    margin-left: 10px;
-    margin-top: 10px;
+    display: table-cell;
+}
+
+.button
+{
+    font-size: 50px;
+    font-family: Karumbi;
+    color: gold;
+    cursor: pointer;
+    margin-left: 20px;
 }

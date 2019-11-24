@@ -3,12 +3,26 @@ import s from "./Header.module.css"
 import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
+
+    const exit = () => {
+        const action = {
+            type: 'QUIT'
+        };
+
+        props.dispatch(action);
+    };
+
     if(props.state.username !== "__NOT__AUTHORISED__")
     {
         return (
+            <div>
                 <div className={s.greeting}>
                     Hello {props.state.username}!
-                </div>)
+                </div>
+                <div className={s.exit}>
+                <ref onClick={exit}> Exit </ref>
+                </div>
+            </div>)
     }
     else
         {

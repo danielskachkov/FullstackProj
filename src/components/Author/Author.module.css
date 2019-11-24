@@ -18,6 +18,7 @@
 
 img
 {
+    margin-left: 50px;
     border-radius: 50%;
     width: 350px;
 }
@@ -26,7 +27,7 @@ img
 {
     grid-area: descr;
     margin-top: 200px;
-    margin-left: 30px;
+    margin-left: 80px;
     font-size: 20px;
 }
 
@@ -34,5 +35,5 @@ img
 {
     grid-area: text;
     font-size: 30px;
-    color: black;
+    color: white;
 }

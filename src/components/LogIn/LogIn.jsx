@@ -35,8 +35,8 @@ const LogIn = (props) =>
         <div className={s.item}>
             Password: <input value={props.state.password} name="FirstName" onChange={password_change}/>
         </div>
-        <div>
-            <button onClick={log_in}> Log in </button>
+        <div className={s.button}>
+            <ref onClick={log_in}> Log in </ref>
         </div>
     </div>
     )

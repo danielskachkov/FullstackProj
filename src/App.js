@@ -12,13 +12,13 @@ const App = (props) => {
   return (
         <div className={s.App}>
             <div className={s.Header}>
-                <Header state = {props.state.Header}/>
+                <Header dispatch = {props.dispatch} state = {props.state.Header}/>
             </div>
             <div className={s.Navbar}>
-                <NavBar classname={s.Navbar}/>
+                <NavBar city={props.state.MainPage.city}/>
             </div>
             <div className={s.Content}>
-                <Route path="/main" component={MainPage}/>
+                <Route path={"/main"} render={() => <MainPage dispatch={props.dispatch} state={props.state.MainPage}/>}/>
                 <Route path="/author" component={Author}/>
                 <Route path="/registration" render={() => <Register dispatch={props.dispatch} state = {props.state.Register}/>}/>
                 <Route path="/login" render={() => <LogIn dispatch={props.dispatch} state = {props.state.LogIn}/>}/>

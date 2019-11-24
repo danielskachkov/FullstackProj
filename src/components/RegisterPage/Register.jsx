@@ -30,8 +30,8 @@ const Register = (props) =>
             <div className={s.item}>
                 Password: <input value={props.state.password} onChange={password_change}/>
             </div>
-            <div>
-                <button> Click </button>
+            <div className={s.button}>
+                <ref> Register </ref>
             </div>
         </div>
         )

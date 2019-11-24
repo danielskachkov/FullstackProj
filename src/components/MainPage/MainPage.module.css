@@ -5,37 +5,24 @@
     display: grid;
 
     grid-template-areas: "text text" "choose graph";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 1fr;
-}
-
-.item a
-{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    transition: color .5s linear;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 30px;
-}
-
-.item a.active
-{
-    color: gold;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 200px 1fr;
 }
 
 .description
 {
     grid-area: text;
+    margin-left: 50px;
 }
 
 .choose
 {
     grid-area: choose;
+    margin-left: 50px;
 }
 
 .graph
 {
     grid-area: graph;
+    background: white;
 }

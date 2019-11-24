@@ -10,7 +10,7 @@ const HeaderReducer = (state = initial_state, action) => {
             state.username = action.username;
             return state;
         case 'QUIT':
-            state.username = "";
+            state.username = "__NOT__AUTHORISED__";
             return state;
         default:
             return state;
